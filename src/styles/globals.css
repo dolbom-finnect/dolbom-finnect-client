@@ -1,0 +1,27 @@
+@import "./color.css";
+@import "./typography.css";
+
+@import "tailwindcss";
+
+@layer utilities {
+  .overflow-auto-hide-scroll {
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .overflow-auto-hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
+textarea {
+  outline: none;
+  resize: none;
+  scrollbar-width: none;
+}
